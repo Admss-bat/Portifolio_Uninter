@@ -1,0 +1,439 @@
+
+/* Resetando configurações de margem do navegador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+main {
+    background-color: #E8F1F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* Menu navegação -------------------------    */
+
+nav {
+    position: absolute;
+    left: 100px;
+    top: 80px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    transition: all 0.8s ease;
+  
+}
+
+nav ul li a:hover{
+    
+    box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+/* primeiro conteiner e subconteiners ---------------------*/
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #247BA0;
+    height: 97vh;
+    transition: all 0.8s ease; /* Estado inicial do efeito de sombra está aqui */
+    transform: translateY(0);
+    z-index: 4;
+    
+}
+
+.sobre-mim:hover {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+    transition: transform 0.8s ease, box-shadow 0.8s ease; /* Efeito de sombra ao passar o mouse */
+    
+}
+
+/* sub conteiner 1 ------------------------- */
+
+.sobre-coluna1 {
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    margin-left: 10%;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.sobre-coluna1 h1{
+    font-size: 100px;
+    color: #E8F1F2;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 100px;
+    
+}
+
+.sobre-coluna1 p{
+    font-size: 30px;
+    margin-top: 40px;
+    color: #13293D;
+    text-align: justify;
+}
+
+/* sub conteiner 2 ----------------------- */
+
+.sobre-coluna2 {
+    width: 50vw;
+    display: flex;  
+    justify-content: center;
+    
+} 
+
+.foto-perfil {
+    width: 400px;
+    border-radius: 350px;
+    box-shadow: 1px 0px 90px rgba(0,0,0,0.5);
+
+}
+
+/* FORMAÇÃO - segundo conteiner e subconteiners ---------------------*/
+
+.formacao {
+    display: flex;
+    align-items: center;
+    
+    padding: 20px;
+    height: 80vh;
+    transition: all 0.8s ease; /* Estado inicial do efeito de sombra e escala está aqui */
+    background-color: #E8F1F2;
+    z-index: 3;
+
+}
+
+.formacao:hover{
+    box-shadow: 0px 0px 15px 12px rgba(0,0,0,0.5);
+    transform: scale(1.0); /* aumenta escala do conteiner */
+    transition: transform 0.8s ease, box-shadow 0.8s ease; /* Efeito de sombra ao passar o mouse */
+    z-index: 5;
+
+}
+
+/* FORMAÇÃO sub conteiner 1 ----------------------- */
+
+.formacao-coluna1{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10%;
+
+}
+
+.formacao-coluna1 h1{
+    font-size: 60px;
+    color: #247BA0;
+    font-weight: bolder;
+    width: 700px;
+    padding-bottom: 20px;
+    
+}
+
+.formacao-coluna1 section p{
+    font-size: 20px;
+    color: #13293D;
+      
+}
+
+.formacao-coluna1 section h2{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #13293D;
+    
+}
+
+/* FORMAÇÃO - sub conteiner 2 ----------------------- */
+
+.formacao-coluna2 {
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 20%;
+    
+}
+
+.formacao-coluna2 h1{
+    font-size: 60px;
+    color: #247BA0;
+    font-weight: bolder;
+    width: 700px;
+    padding-bottom: 20px;
+
+}
+
+.formacao-coluna2 section p{
+    font-size: 20px;
+    color: #13293D;
+    
+}
+
+.formacao-coluna2 section h2{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #13293D;
+    
+}
+
+/* PORTIFOLIO terceiro conteiner e subconteiners ---------------------*/
+
+.portifolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 60vh;
+    transition: all 0.8s ease; /* Estado inicial do efeito de sombra está aqui */
+    background-color:  #247BA0;
+    z-index: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.portifolio:hover {
+    box-shadow: 0px 0px 15px 12px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0.8s ease; /* Efeito de sombra ao passar o mouse */
+    z-index: 4;
+    
+}
+
+/* PORTIFOLIO - sub conteiner 1 ----------------------- */
+
+.portifolio-coluna1 {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    
+}
+
+/* PORTIFOLIO - sub conteiner 2 ----------------------- */
+
+.portifolio-coluna2 {
+    width: 50vw;
+    display:flex;
+    justify-content: center;
+    margin-right: 250px;
+
+}
+
+.portifolio-coluna2 h1{
+    font-size: 40px;
+    color: #E8F1F2;
+    font-weight: bolder;
+    width: 380px;
+    text-align: right;
+    
+}
+
+/*  PORTIFOLIO - Link para portifolio do Github --------------------- */
+
+.github-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #171515;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 420px;
+    width: 100%;
+}
+
+.github-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.github-icon {
+    width: 42px;
+    height: 42px;
+    fill: #171515;
+    flex-shrink: 0;
+}
+
+.github-texto h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #171515;
+}
+
+.github-texto span {
+    font-size: 14px;
+    color: #444;
+    margin-top: 4px;
+}
+
+.github-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTATO - quarto conteiner e subconteiners ---------------------*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 70vh;
+    transition: all 0.8s ease; /* Estado inicial do efeito de sombra está aqui */
+    transform: translateY(0);
+    background-color: #13293D;
+    z-index: 1;
+}
+
+/* CONTATO - sub conteiner 1 ----------------------- */
+
+.contato-coluna1 {
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    margin-left: 10%;
+    align-items: center;
+
+}
+
+.contato-coluna1 h1{
+    font-size: 40px;
+    color: #E8F1F2;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 400px;
+    
+}
+
+/* CONTATO - sub conteiner 2 ----------------------- */
+
+.contato-coluna2 {
+    width: 50vw;
+    display: flex;  
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 200px;
+
+}
+
+.contato-coluna2 h1{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #E8F1F2;
+    font-size: 30px;
+
+}
+
+/*  CONTATO - formulario */
+
+form {
+    max-width: 400px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e3a5f;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    
+}
+
+form label {
+    color: #E8F1F2;
+    margin-bottom: 6px;
+    font-weight: 500;
+
+}
+
+input, textarea {
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2c4c73;
+    color: #E8F1F2;
+    font-size: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+input::placeholder, textarea::placeholder {
+    color: #a9c0d8;
+
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #3b5f89;
+    box-shadow: 0 0 0 3px rgba(100, 179, 255, 0.3);
+
+}
+
+button {
+    padding: 12px;
+    background-color: #E8F1F2;
+    color: #13293D;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover {
+    background-color: #4aa8ff;
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #E8F1F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rotulo p{
+    color: #13293D;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+

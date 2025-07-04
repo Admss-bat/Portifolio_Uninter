@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio - Sobre Mim</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--<header>
+         <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main>
+
+        <div class="sobre-mim" id="sobre">
+            <nav id="navegacao">
+                <ul>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portifolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="sobre-coluna1">
+                <h1>Técnico de Informática</h1>
+                <p>
+                    Gosto de estar sempre aprendendo coisas novas. Principalmente quando se tratam de tecnologias.
+                    Sou estudante de Análises e Desenvolvimento de Sistemas, mas, atuando há mais de 7 anos como Técnico de Informática.
+                    Sou formado em Física e, durante esse tempo, dei aulas no Ensino Médio onde constantemente desenvolvia conteúdos que mesclam as duas áreas de conhecimento.
+                    <br>Ah! Também tenho 2 gatos! Luke e Anakin.
+                </p>
+            </div>
+
+            <div class="sobre-coluna2">
+
+                <img src="img/perfil2.jpeg" alt="Foto de perfil" class="foto-perfil">
+            
+            </div>
+
+        </div>
+
+        <div class="formacao" id="formacao">
+            
+            <div class="formacao-coluna1">
+                <h1>Formação Acadêmica</h1>
+                
+                <section>
+                    <h2>Análise e Desenvolvimento de Sistemas</h2>
+                    <p>Faculdade Uninter - 2027</p>
+                    <br>
+                    <h2>Licenciatura em Física</h2>
+                    <p>Universidade Federal de Goiás - 2022</p>
+                    <br>
+                    <h2>Técnico em Informática</h2>
+                    <p>Colégio Estadual Santa Luzia - 2017</p>
+                </section>
+            </div>
+            
+            <div class="formacao-coluna2">
+                <h1>Idiomas</h1>
+                <br>
+                <section>
+                    <h2>Português</h2>
+                    <p>Nativo</p>
+                    <br>
+                    <h2>Inglês</h2>
+                    <p>Fluente</p>
+                    <br>
+                    <h2>Espanhol</h2>
+                    <p>Intermediário</p>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="portifolio" id="portifolio">
+
+            <div class="portifolio-coluna1">
+                <a class="github-card" href="https://github.com/Admss-bat" target="_blank">
+                    <!-- icone SVG do GitHub -->
+                    <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0.297C5.37 0.297 0 5.667 0 12.297c0 5.289 3.438 9.773 8.207 11.387.6.111.793-.261.793-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.388-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.303-5.467-1.332-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 0 1 3.003-.404c1.018.005 2.043.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.624-5.48 5.921.43.371.823 1.103.823 2.222 0 1.606-.015 2.899-.015 3.293 0 .319.19.694.8.576C20.565 22.065 24 17.582 24 12.297 24 5.667 18.627 0.297 12 0.297z"/>
+                    </svg>
+
+                    <div class="github-texto">
+                        <h3>Meu GitHub (Admss-bat)</h3>
+                        <span>Veja meus projetos públicos</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portifolio-coluna2">
+                <h1>Aqui você pode conhecer alguns dos meus projetos</h1>
+            </div>
+
+        </div>
+
+        <div class="contato" id="contato">
+            <div class="contato-coluna1">
+                <h1>Quer desenvolver um projeto mas não sabe quem procurar? </h1>
+            </div>
+            <div class="contato-coluna2">
+                <section class="formulario">
+                    <h1>Envie sua mensagem</h1>
+                    <form method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="rotulo">
+            <p>&copy; 2025 - Portfólio Acadêmico - Addams Carvalho - Uninter</p>
+        </div>
+    </footer>
+</body>
+</html>
