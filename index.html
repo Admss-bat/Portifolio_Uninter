@@ -9,7 +9,7 @@
 <body>
     <header>
         
-        <nav id="navegacao">
+        <nav id="navegacao">  <!-- Meu para navegacao interna -->
                 <ul>
                     <li><a href="#sobre">Sobre mim</a></li>
                     <li><a href="#formacao">Formação</a></li>
@@ -20,7 +20,7 @@
     </header>
     <main>
 
-        <div class="sobre-mim" id="sobre">
+        <div class="sobre-mim" id="sobre">  <!-- toda a sessão/conteiner sobre mim -->
             <div class="sobre-coluna1">
                 <h1>Técnico de Informática</h1>
                 <p>
@@ -39,7 +39,7 @@
 
         </div>
 
-        <div class="formacao" id="formacao">
+        <div class="formacao" id="formacao">  <!-- toda a sessão/conteiner sobre minha formação -->
             
             <div class="formacao-coluna1">
                 <h1>Formação Acadêmica</h1>
@@ -73,7 +73,7 @@
 
         </div>
 
-        <div class="portifolio" id="portifolio">
+        <div class="portifolio" id="portifolio">    <!-- sessão/conteiner para deixar o link do meu github, onde estão meus portfolios -->
 
             <div class="portifolio-coluna1">
                 <a class="github-card" href="https://github.com/Admss-bat" target="_blank">
@@ -95,14 +95,14 @@
 
         </div>
 
-        <div class="contato" id="contato">
+        <div class="contato" id="contato">  <!-- toda a sessão/conteiner  para contato -->
             <div class="contato-coluna1">
                 <h1>Quer desenvolver um projeto mas não sabe quem procurar? </h1>
             </div>
             <div class="contato-coluna2">
                 <section class="formulario">
                     <h1>Envie sua mensagem</h1>
-                    <form method="POST">
+                    <form  method="POST" id="formulario">  <!-- Como não há back-end, nenhum endpoint ou BD, esse formulário será simulado, seguindo script abaixo -->
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome">
                         <label for="email">Email:</label>
@@ -111,6 +111,7 @@
                         <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
                         <button type="submit">Enviar</button>
                     </form>
+                    <p id="retorno"></p>
                 </section>
             </div>
 
@@ -122,5 +123,30 @@
             <p>&copy; 2025 - Portfólio Acadêmico - Addams Carvalho - Uninter</p>
         </div>
     </footer>
+
+    <!-- O script abaixo irá simular o envio do formulário-->
+    
+    <script>  
+        const form = document.getElementById('formulario');  //adiciona o conteudo do id da tag <form> para tratarmos a reposta ao clique
+        const retorno = document.getElementById('retorno');  //adiciona o conteudo do id da tag <p> onde ficará a mensagem
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  //impede conclusão e envio do formulário, já que não criei endpoint.
+
+            retorno.textContent = 'Formulário enviado com sucesso! Em breve retornaremos seu contato!'; //mensagem que irá aparecer na tag <p>
+            //retorno.style.color = '#E8F1F2'; //altera a cor da mensagem
+
+            form.reset(); //formulário reseta o que foi preenchido
+            setTimeout(() => {
+                retorno.style.opacity = '0';  // inicia a transição de opacidade
+
+                
+                setTimeout(() => {   // Depois que a transição terminar, limpa o texto para remover o espaço
+                    retorno.textContent = '';
+                    retorno.style.opacity = '1';  // reseta a opacidade para o próximo uso
+                }, 4000);
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
